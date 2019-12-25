@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
     console.log(`the requested method is ${req.method} and the requested url is ${req.url}`);
-    fs.appendFile('server.log',`the requested method is ${req.method} and the requested url is ${req.url} at ${new Date().toString()}\n`);
+    //fs.appendFile('server.log',`the requested method is ${req.method} and the requested url is ${req.url} at ${new Date().toString()}\n`);
     console.log(new Date().toString());
     next();
     
